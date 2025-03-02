@@ -6,7 +6,7 @@ Load the plugin
 
 ```kdl
 plugins {
-    switch-to-last-session location="file:/path/to/zellij-lats-session.wasm"
+    switch-to-last-session location="https://github.com/inoc603/zellij-last-session/releases/download/0.1.0/zellij-last-session.wasm"
 }
 
 load_plugins {
