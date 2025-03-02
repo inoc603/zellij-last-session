@@ -14,7 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: add build target
-        run: rustup target add wasm32-wasip1
-      - name: Build
-        run: cargo build --verbose --release
+      # - name: add build target
+      #   run: rustup target add wasm32-wasip1
+      # - name: Build
+      #   run: cargo build --release
+      - name: Rust Release binary
+        # You may pin to the exact commit or the version.
+        # uses: rust-build/rust-build.action@6febf1b0ed6499a46610b58ef9d810398e75f3c2
+        uses: rust-build/rust-build.action@v1.4.5
+        with:
+          # Output target
+          RUSTTARGET: wasm32-wasip1
+          # List of archive types to publish the binaries with, default "zip", supports zip and all tar formats
+          # ARCHIVE_TYPES: # optional
+          # # Full name of archive to upload (you must specify file extension and change this if building multiple targets)
+          # ARCHIVE_NAME: # optional
