@@ -24,7 +24,7 @@ jobs:
         uses: rust-build/rust-build.action@v1.4.5
         with:
           # Output target
-          RUSTTARGET: wasm32-wasip1
+          RUSTTARGET: wasm32-wasi
           # List of archive types to publish the binaries with, default "zip", supports zip and all tar formats
           # ARCHIVE_TYPES: # optional
           # # Full name of archive to upload (you must specify file extension and change this if building multiple targets)
