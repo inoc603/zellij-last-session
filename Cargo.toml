@@ -1,8 +1,8 @@
 [package]
-name = "rust-plugin-example"
+name = "zellij-last-session"
 version = "0.1.0"
-authors = ["Aram Drevekenin <aram@poor.dev>"]
+authors = ["Inoc603 <inoc603@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-zellij-tile = "0.41.1"
+zellij-tile = "0.41.2"
